@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+
+    <style>
+        @charset "UTF-8";
+
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @font-face {
+            font-family: 'Android';
+            src: url('../desafio010/fontes/IDroid.otf')
+            format('opentype');
+            font-weight: normal;
+        }
+        :root {
+            --cor-ancora-hover: #21874
+            --cor-ancora-active: rgb(116, 158, 137)
+            
+            --font_padrao: 'Arial', 'Helvetica', 'Verdana', 'sanserif';
+            --font_secundaria: font-family: 'Bebas Neue', cursive;
+            --font_android: 'Android', cursive;
+        }
+        
+        body {
+            margin: 0px;
+            
+            text-indent: 20px;
+            
+            background-color: rgb(232, 255, 198);
+           
+        }
+        header {
+            /* Gradient in Hex */
+           background-image:  linear-gradient(to bottom, #21874F 0%, 17.404305934906006%, #18723E 34.80861186981201%, 45.21531164646149%, #0D5329 55.62201142311096%, 64.65311050415039%, #043D1D 73.68420958518982%);
+
+        
+            
+            border: 1px solid green;
+            margin: 0px;
+            padding: 10px;
+
+        }
+        nav {
+            
+            padding: 3px;
+            
+        }
+        nav a {
+            border: none;
+            text-decoration: none;
+            color: white;
+            font-weight: bold; /*grossura da fonte*/
+            padding: 10px;
+            margin-right: 20px;
+            transition: background .3s;
+            border-radius: 5px; /*borda circular*/
+            
+        }
+        nav a:hover {
+            background-color: rgb(113, 197, 113);/*mudar cor ao passar o cursor por cima*/
+
+        }
+        nav a:active {
+            background-color: rgb(31, 109, 70);/*mudar cor ao clicar*/
+        }
+        header > h1 {
+            
+            font-weight: normal;
+            font-style: normal;
+            color: black;
+            text-align: left;
+
+            font-size: max(60px, 5vw);
+
+           font-family: var(--font_secundaria);
+        }
+        main h2 {
+            text-align: left;
+            font-family: var(--font_android);
+        }
+        h2.titulocolor {
+            background: #3de488;
+            color: white;
+            text-align: left;
+            border-radius: 10px 10px 0px 0px;
+            margin: auto;
+
+        }
+        section.sobre {
+            background-color: rgb(216, 245, 158);
+            padding: 20px;
+            border-radius: 0px 0px 10px 10px;
+            
+        }
+        p {
+            text-align: left;
+            
+        }
+        span.corverde {
+            color: #3DE488;
+        }
+        section {
+            font-weight: bold;
+            font-style: normal;
+            
+            text-align: left;
+        }
+       
+        picture {
+            text-align: center;
+        }
+        main {
+            
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 0px;
+            margin-right: 66px;
+            margin-bottom: 10px;
+            margin-left: 100px;
+            gap: 2rem;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CURIOSIDADES DE TECNOLOGIA</h1>
+        <h2>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+    </header>
+   <main>
+       <section>
+        <article>
+            <h2>historia do mascote do android</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsam placeat recusandae dolore, maiores repellat magni nostrum voluptate, dolor nihil eum temporibus rerum a harum obcaecati et saepe eius mollitia?</p>
+            <h2>a primeira versão</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quibusdam veritatis incidunt unde necessitatibus in veniam assumenda architecto delectus vel blanditiis dolor quis exercitationem dicta at facere, beatae laudantium molestias.</p>
+            
+            <picture>
+                <source media="(max-width: 500px)" srcset="./imagens/androidcell.png" type="image/png">
+                <img src="./imagens/androidpc.png" alt="androidpc">
+            </picture>
+           
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h2>surge um novo mascote</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, sint animi voluptates earum id autem iste amet ex maxime, quae error, tempore quas et. Totam perspiciatis quaerat nemo odio rerum.</p>
+            <picture>
+                
+                <source media="(max-width: 1050px)" srcset="./imagens/irinacell.jpg" type="image/jpg">
+                <img src="./imagens/irinapc.jpg" alt="irina_blok_pc">
+            </picture>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestiae nobis quae, tenetur quos aliquam reprehenderit architecto. Qui expedita cupiditate, quos eligendi quas at, quasi totam magnam nisi optio delectus.</p>
+            <picture>
+            <img src="./imagens/bugdroid.png" alt="homem com mascote android de mãos dada">
+            </picture>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex harum amet veniam beatae. Voluptatem nam fugiat id, minima quisquam cum itaque rerum magni, quidem, illo perspiciatis possimus veniam ipsum.</p>
+            <video width="500" controls loop>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </video>
+            
+        </article>
+       </section>
+       <h2 class="titulocolor">Quer aprender mais?</h2>
+       <section class="sobre">
+        
+            
+        <u>1.5 - Cupcake</u>
+        <u>1.6 - Donut</u>
+        <u>3.0 - Eclair</u>
+        <u>2.2 - Froyo</u>
+        <u>2.3 - Gingerbread</u>
+        <u>3.0 - Honeycomb</u>
+        <u>4.0 - Ice Cream Sandwich</u>
+
+
+
+    
+        <u>4.1 - Jelly Bean</u>
+        <u>4.4 - KitKat</u>
+        <u>5.0 - Lolpop</u>
+        <u>6.0 - Marshmallow</u>
+        <u>7.0 - Nougat</u>
+        <u>8.0 - Oreo</u>
+        <u>9.0 - Pis</u>
+            
+       
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet in dolores quasi vitae modi earum alias sequi obcaecati</p>
+       <br>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ducimus facilis eos magnam aspernatur rem per.</p>
+    </section>
+       <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema <span class="corverde">Android</span> e seu simpático mascote</p>
+    
+   </main>
+   <footer>
+    <p>site criado por gustavo guanabara para o curso em video</p>
+   </footer>
+</body>
+</html>

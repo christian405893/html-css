@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo do Caixas</title>
+
+    <style>
+        h1 {
+            background: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            */
+            /*usando shorthands*/
+            border 10px solid darkslategray;
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+            /*usando shorthands*/
+
+            padding: 10px;
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+            /*usando shorthands*/
+            margin: 20px auto 40px auto;
+
+            /* outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet; */
+
+            outline:5px dashed blueviolet;
+            /*margin: auto; e é assim que centraliza uma div kkkkkkkkk*/ 
+            /*obs: se fo uma caixa use "margin" se for um texto use "text-align: center;"*/
+        }
+
+        a {
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: red;*/
+            /*usando shorthands*/
+            border: 10px solid red;
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+            /*usando shorthands*/
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de inline-level</a>. Vamos ver como tudo funciona</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio007</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+
+    <p>Você está vendo a imagem completa? experimente ampliar o tamanho da sua janela para contemplar a flexibilidade da imagem</p>
+
+    <!--<img src="../../imagens/paisagem-arvore820px510py.jpg" alt="paisagem-arvore" width="1600px" height="800px">-->
+
+    <picture>
+        <source srcset="../../imagens/paisagem-arvore820px510py" media="(max-width: 768px)">
+        <source srcset="">
+        <img srcset="../../imagens/paisagem-arvore820px510py" alt="My default image">
+    </picture>
+</body>
+</html>

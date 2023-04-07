@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens_ex011/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens_ex011/foto-m.png" type="image/png">
+
+        <img src="imagens_ex011/foto-g.png" alt="foto-g">
+    </picture>
+
+    <h1>reporduzindo áudio</h1>
+    <p>vamos aprender a reproduzir áudios em HTML:5</p>
+    <audio src="midia/Cielo - Huma-Huma.mp3" controls autoplay></audio>
+    <!--normalmente um navegador é compatiível com esses formatos: MP3, WAV, OGG-->
+    <p>outra maneira de botar o audio</p>
+    <audio preload="metadata" controls>
+        <source src="midia/Cielo - Huma-Huma.mp3" type="audio/mpeg">
+        <source src="midia/Cielo - Huma-Huma.mp3" type="audio/ogg">
+        <source src="midia/Cielo - Huma-Huma.mp3" type="audio/wav">
+        <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Cielo - Huma-Huma.mp3">clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
