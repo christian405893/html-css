@@ -84,7 +84,7 @@ header p {
     margin: auto;
     padding-right: 10px; /*distancia da lateral direita até o conteudo*/
     padding-left: 10px; /*distancia da lateral esquerda até o conteudo*/
-    margin-bottom: 20px;
+    padding-bottom: 50px;
     box-shadow: 10px, 2px, 0px, rgba(0, 0, 0, 0.295);
 }
 nav {
