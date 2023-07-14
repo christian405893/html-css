@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse; /*para tirar os espaços externos da tabela*/
+            position: relative;
+            
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky; /*fixa, mas depende do top 0 ou top -1px*/
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(odd) { /*odd ou 2n-1*/
+            background-color: white;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(even) { /*2n*/
+            /*:nth-child(2n) cor de 2 em 2 linhas*/
+            background-color: lightgray;
+        }
+
+        td:nth-child(2) {
+            text-align: right;
+            /*text-decoration: underline;*/
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatommia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.saopaulo.sp.gov.br/" target="_blank">São Paulo</a></td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 873 943</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>14 264 064</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11 433 957</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>´9 132 078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8 602 665</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7 164 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>7 075 181</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td>7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>4 144 597</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>4 018 650</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td>4 018 127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3 506 853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3 484 466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3 337 357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3 273 227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>3 015 268</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2 776 986</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>210 934 342</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quae id quasi accusantium nesciunt iste porro praesentium voluptatem earum incidunt eum, dolore ea doloribus facere aspernatur sit sunt perspiciatis! Officiis.
+        Quasi repudiandae dolore suscipit facere, molestias distinctio labore sapiente aliquam? Laudantium, odio tempore! Tempore culpa officia quis dolore sequi aspernatur architecto, nobis, dolores nihil, modi obcaecati quibusdam saepe facilis tempora.
+        Adipisci quis odit sed architecto sequi distinctio, delectus neque. Velit ipsam, earum animi at, est placeat maxime, nisi harum aliquid pariatur eum cumque sapiente! Quo veniam alias quod? Qui, eveniet!
+        Quas esse cupiditate iste ea! Iste, ut velit eaque rerum et quisquam accusamus pariatur perspiciatis id itaque, ipsum enim ea amet! Corrupti autem quam in illo alias, et officiis qui?
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quae id quasi accusantium nesciunt iste porro praesentium voluptatem earum incidunt eum, dolore ea doloribus facere aspernatur sit sunt perspiciatis! Officiis.
+        Quasi repudiandae dolore suscipit facere, molestias distinctio labore sapiente aliquam? Laudantium, odio tempore! Tempore culpa officia quis dolore sequi aspernatur architecto, nobis, dolores nihil, modi obcaecati quibusdam saepe facilis tempora.
+        Adipisci quis odit sed architecto sequi distinctio, delectus neque. Velit ipsam, earum animi at, est placeat maxime, nisi harum aliquid pariatur eum cumque sapiente! Quo veniam alias quod? Qui, eveniet!
+        Quas esse cupiditate iste ea! Iste, ut velit eaque rerum et quisquam accusamus pariatur perspiciatis id itaque, ipsum enim ea amet! Corrupti autem quam in illo alias, et officiis qui?
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quae id quasi accusantium nesciunt iste porro praesentium voluptatem earum incidunt eum, dolore ea doloribus facere aspernatur sit sunt perspiciatis! Officiis.
+        Quasi repudiandae dolore suscipit facere, molestias distinctio labore sapiente aliquam? Laudantium, odio tempore! Tempore culpa officia quis dolore sequi aspernatur architecto, nobis, dolores nihil, modi obcaecati quibusdam saepe facilis tempora.
+        Adipisci quis odit sed architecto sequi distinctio, delectus neque. Velit ipsam, earum animi at, est placeat maxime, nisi harum aliquid pariatur eum cumque sapiente! Quo veniam alias quod? Qui, eveniet!
+        Quas esse cupiditate iste ea! Iste, ut velit eaque rerum et quisquam accusamus pariatur perspiciatis id itaque, ipsum enim ea amet! Corrupti autem quam in illo alias, et officiis qui?
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quae id quasi accusantium nesciunt iste porro praesentium voluptatem earum incidunt eum, dolore ea doloribus facere aspernatur sit sunt perspiciatis! Officiis.
+        Quasi repudiandae dolore suscipit facere, molestias distinctio labore sapiente aliquam? Laudantium, odio tempore! Tempore culpa officia quis dolore sequi aspernatur architecto, nobis, dolores nihil, modi obcaecati quibusdam saepe facilis tempora.
+        Adipisci quis odit sed architecto sequi distinctio, delectus neque. Velit ipsam, earum animi at, est placeat maxime, nisi harum aliquid pariatur eum cumque sapiente! Quo veniam alias quod? Qui, eveniet!
+        Quas esse cupiditate iste ea! Iste, ut velit eaque rerum et quisquam accusamus pariatur perspiciatis id itaque, ipsum enim ea amet! Corrupti autem quam in illo alias, et officiis qui?
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quae id quasi accusantium nesciunt iste porro praesentium voluptatem earum incidunt eum, dolore ea doloribus facere aspernatur sit sunt perspiciatis! Officiis.
+        Quasi repudiandae dolore suscipit facere, molestias distinctio labore sapiente aliquam? Laudantium, odio tempore! Tempore culpa officia quis dolore sequi aspernatur architecto, nobis, dolores nihil, modi obcaecati quibusdam saepe facilis tempora.
+        Adipisci quis odit sed architecto sequi distinctio, delectus neque. Velit ipsam, earum animi at, est placeat maxime, nisi harum aliquid pariatur eum cumque sapiente! Quo veniam alias quod? Qui, eveniet!
+        Quas esse cupiditate iste ea! Iste, ut velit eaque rerum et quisquam accusamus pariatur perspiciatis id itaque, ipsum enim ea amet! Corrupti autem quam in illo alias, et officiis qui?
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quae id quasi accusantium nesciunt iste porro praesentium voluptatem earum incidunt eum, dolore ea doloribus facere aspernatur sit sunt perspiciatis! Officiis.
+        Quasi repudiandae dolore suscipit facere, molestias distinctio labore sapiente aliquam? Laudantium, odio tempore! Tempore culpa officia quis dolore sequi aspernatur architecto, nobis, dolores nihil, modi obcaecati quibusdam saepe facilis tempora.
+        Adipisci quis odit sed architecto sequi distinctio, delectus neque. Velit ipsam, earum animi at, est placeat maxime, nisi harum aliquid pariatur eum cumque sapiente! Quo veniam alias quod? Qui, eveniet!
+        Quas esse cupiditate iste ea! Iste, ut velit eaque rerum et quisquam accusamus pariatur perspiciatis id itaque, ipsum enim ea amet! Corrupti autem quam in illo alias, et officiis qui?
+    </p>
+</body>
+</html>
