@@ -6,4 +6,4 @@
 
  <a href="https://christian405893.github.io/html-css/exercicios/ex001/index.html">Clique aqui para executar o exercicio 001</a>
  <a href="https://christian405893.github.io/html-css/exercicios/ex025/form03.html">form003.html</a>
- <a href="https://christian405893.github.io/html-css/exercicios/ex026/mq002/index.html">form003.html</a>
+ <a href="https://christian405893.github.io/html-css/exercicios/ex026/mq002/index.html">mq002</a>
