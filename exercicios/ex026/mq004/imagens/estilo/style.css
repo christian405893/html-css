@@ -22,8 +22,9 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.549);
-    width: 80vw;
+    width: 400px;
     margin: auto;
+    margin-top: 20px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -31,6 +32,7 @@ main {
 h1 {
     text-align: center;
     color: white;
+    font-size: ;
     text-shadow: 2px 2px 2px rgb(rgb(84, 64, 64), green, blue);
 }
 
